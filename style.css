@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*hides scroll bar*/
+    cursor: none;/*hides default cursor*/
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.cursor{
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+}
+#title{
+    position:  absolute;
+    font-size: 55px;
+    color: white;
+    left: 5%; 
+}
+#subtitle{
+    position:  absolute;
+    font-size: 17px;
+    color: white;
+    left: 7%; 
+    top: 12%;
+}
+#start{
+    position:  absolute;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    top: 30%;
+}
+#gameOver{
+    position:  absolute;
+    font-size: 45px;
+    color: white;
+    align-items: center;
+    top: 5%;
+}
+#gameScore{
+    position:  fixed;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    top: 5%;
+}
+#final{
+    position:  fixed;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    top: 20%;
+}
+a{
+    position:  absolute;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    top: 50%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: black;
+    opacity: 80%;
+}
+@keyframes moveScore1{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 5%;
+    }
+}
+@keyframes moveScore2{
+    from{
+        top: 5%;
+    }
+    to{
+        top: 30%;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 80%;
+    }
+}
+@keyframes moveFinal{
+    from{
+        top: 0%;
+    }
+    to{
+        top: 20%;
+    }
+}
